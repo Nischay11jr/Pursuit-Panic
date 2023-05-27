@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pursuit Panic</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'index.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename = 'favicon_game.png') }}">
+</head>
+
+<body>
+    <header>
+        <h1>Pursuit Panic</h1>
+    </header>
+
+    <main>
+        <section class="content">
+            <section class="intro">
+                <h2>You play as a fearless street racer who just pulled off a daring heist. As you speed away from the
+                    scene, you realize the cops are hot on your tail, and you need to escape before they catch you.</h2>
+            </section>
+
+            <section class="play">
+                <p><a href="{{ url_for('runner') }}">PLAY</a></p>
+            </section>
+
+            <section class="instructions">
+                <h2>Instructions</h2>
+                <ul>
+                    <li>Use the arrow keys on your keyboard to control the car's movement.</li>
+                    <li>Press the up arrow key to move the car forward.</li>
+                    <li>Press the left and right arrow keys to move the car left and right, respectively.</li>
+                    <li>Press the down arrow key to move it backwards.</li>
+                    <li>Dodge the obstacles on the road by moving left or right to avoid them.</li>
+                    <li>The obstacles will appear randomly and move in different directions, so be prepared to move in
+                        any direction to avoid them.</li>
+                    <li>Collect coins on the road to increase your score.</li>
+                    <li>If the police car catches up to you, the game is over.</li>
+                    <li>The longer you stay ahead of the police car and the more coins you collect, the higher your
+                        score will be.</li>
+                </ul>
+            </section>
+
+            <section class="precap">
+                <section class="precapcontent">
+                    <section class="precapheader">
+                        <h2>PRECAP</h2>
+                    </section>
+
+                    <section class="images">
+                        <figure>
+                            <img src="{{ url_for('static', filename = 'img2.png') }}">
+                        </figure>
+
+                        <figure>
+                            <img src="{{ url_for('static', filename = 'img1.png') }}">
+                        </figure>
+
+                        <figure>
+                            <img src="{{ url_for('static', filename = 'img3.png') }}">
+                        </figure>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Pursuit Panic. All Rights Reserved.</p>
+        <p>The sprites are installed from <a href="https://www.kindpng.com/">Kindpng.com</a> and <a href="https://opengameart.org/">OpenGameArt.org</a>.</p>
+        <p>The audio files are installed from <a href="https://freesound.org/">freesound.org</a>.</p>
+    </footer>
+
+</body>
+
+</html>

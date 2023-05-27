@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pursuit Panic</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'runner.css') }}">
+    <script src="{{ url_for('static', filename = 'runner.js') }}" type="module"></script>
+    <link rel="icon" href="{{ url_for('static', filename = 'favicon_game.png') }}">
+
+</head>
+
+<body>
+    <canvas width="800" height="500"></canvas>
+
+    <audio id="audio1" src="{{ url_for('static', filename = 'police_sirens.wav') }}"></audio>
+    <audio id="audio2" src="{{ url_for('static', filename = 'cops_on_radio.wav') }}"></audio>
+    <audio id="coin_grab" src="{{ url_for('static', filename = 'coin_grab.wav') }}"></audio>
+
+</body>
+
+</html>

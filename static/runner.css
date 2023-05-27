@@ -1,0 +1,15 @@
+canvas{
+    background-color: rgb(79, 225, 245);
+    display: block;
+    margin: 1em auto;
+}
+
+header{
+    font-size: 2em;
+    text-align: center;
+}
+
+html{
+    background-image: url("policemainbg.jpg");
+    background-size: cover;
+}
